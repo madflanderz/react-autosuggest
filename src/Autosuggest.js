@@ -356,7 +356,8 @@ class Autosuggest extends Component {
 
             break;
 
-          case 'Enter': {
+          case 'Enter':
+          case 'Tab': {
             const focusedSuggestion = this.getFocusedSuggestion();
 
             if (isOpen && !alwaysRenderSuggestions) {
