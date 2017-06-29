@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import shallowEqualArrays from 'shallow-equal/arrays';
 import { actionCreators } from './redux';
@@ -453,6 +454,5 @@ Autosuggest.propTypes = {
   revealSuggestions: PropTypes.func.isRequired,
   closeSuggestions: PropTypes.func.isRequired
 };
-
 
 export default connect(mapStateToProps, actionCreators)(Autosuggest);

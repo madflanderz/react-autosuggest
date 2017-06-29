@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import { createStore } from 'redux';
 import reducer from './redux';
 import Autosuggest from './Autosuggest';
@@ -102,7 +103,6 @@ export default class AutosuggestContainer extends Component {
     );
   }
 }
-
 
 AutosuggestContainer.propTypes = {
   suggestions: PropTypes.array.isRequired,
